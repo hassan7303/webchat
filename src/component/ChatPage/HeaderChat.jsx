@@ -5,8 +5,8 @@ function HeaderChat(){
         <>
             <Avatar alt="Avatar" src="./girl-5.jpg" />
             <div className="header_name_user">
-                <p>اقای عسکری</p>
-                <p>last seen recently</p>
+                <p className="data_username_profill">اقای عسکری</p>
+                <p className="date_seen">last seen recently</p>
             </div>
         </>
     )

@@ -1,11 +1,42 @@
+
 .container_header{
     background: rgba(41, 41, 241, 0.61);
     display: flex;
     flex-direction: row;
+    gap: 18px;
+    align-items: center;
+    padding: 7px 15px !important;
+    grid-column: 2;
 }
 .header_name_user{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
+}
+.date_seen{
+    position: relative;
+    font-size: 11px;
+    margin: 0 !important;
+}
+.data_username_profill{
+    position: relative;
+    margin: 0 !important;
+}
+.container_chat_ui{
+    display: grid;
+    grid-template-columns: 423px 69vw;
+}
+main{
+    background: red;
+    grid-column: 2;
+}
+menu{
+    background: blue;
+    display: none;
+}
+aside{
+    background: gold;
+    grid-column: 1;
+    grid-row: 1;
 }
