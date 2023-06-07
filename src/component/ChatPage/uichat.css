@@ -6,7 +6,9 @@
     gap: 18px;
     align-items: center;
     padding: 7px 15px !important;
-    grid-column: 2;
+    grid-column: 2/-1;
+    height: 57px;
+    justify-content: space-between;
 }
 .header_name_user{
     display: flex;
@@ -25,7 +27,8 @@
 }
 .container_chat_ui{
     display: grid;
-    grid-template-columns: 423px 69vw;
+    grid-template-columns: 423px 1fr;
+    grid-template-rows: 1fr 91.5vh;
 }
 main{
     background: red;
@@ -38,5 +41,19 @@ menu{
 aside{
     background: gold;
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1/-1;
+    height: 100vh;
+}
+.icons{
+    width: 26px;
+}
+.icons_header{
+    position: relative;
+    display: flex;
+    gap: 18px;
+}
+.profile_information{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
 }
