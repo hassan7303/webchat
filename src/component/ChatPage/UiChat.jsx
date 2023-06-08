@@ -1,6 +1,10 @@
-import HeaderChat from "./HeaderChat";
+import HeaderChat from "./header/HeaderChat";
 import './uichat.css'
-import {Abc} from "@mui/icons-material";
+import SimpleBottomNavigation from "./Sidebar/menuchat";
+import SearchAppBar from "./Sidebar/Sidebar";
+
+
+
 function UiChat(){
     return(
         <div className="container_chat_ui">
@@ -8,13 +12,14 @@ function UiChat(){
                 <HeaderChat/>
             </header>
             <main>
-                <p>hassan</p>
+
             </main>
             <menu>
                 <p>hassan</p>
             </menu>
             <aside>
-
+                <SearchAppBar/>
+                <SimpleBottomNavigation/>
                 <p>hassan</p>
             </aside>
         </div>

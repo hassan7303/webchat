@@ -1,14 +1,7 @@
 
 .container_header{
-    background: rgba(41, 41, 241, 0.61);
-    display: flex;
-    flex-direction: row;
-    gap: 18px;
-    align-items: center;
-    padding: 7px 15px !important;
-    grid-column: 2/-1;
-    height: 57px;
-    justify-content: space-between;
+
+
 }
 .header_name_user{
     display: flex;
@@ -43,6 +36,7 @@ aside{
     grid-column: 1;
     grid-row: 1/-1;
     height: 100vh;
+    z-index: 1000;
 }
 .icons{
     width: 26px;
@@ -56,4 +50,25 @@ aside{
     display: flex;
     flex-direction: row;
     gap: 18px;
+}
+.MuiPaper-root{
+    position: relative !important;
+    height: 62px;
+    z-index: 1000 !important;
+   
+}
+.MuiToolbar-root{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+
+}
+.css-1orzy9s {
+    position: relative;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
