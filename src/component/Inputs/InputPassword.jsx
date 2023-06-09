@@ -15,7 +15,7 @@ function InputPassword(){
     return(
         <>
             <FormControl sx={{ m: 1, width: '25ch' }} variant="standard" >
-                <InputLabel htmlFor="standard-adornment-password" >Password</InputLabel>
+                <InputLabel htmlFor="standard-adornment-password" >رمز خود را وارد کنید</InputLabel>
                 <Input
                     id="standard-adornment-password" onChange={(event)=>setPassword(event.target.value)}
                     type={showPassword ? 'text' : 'password'}

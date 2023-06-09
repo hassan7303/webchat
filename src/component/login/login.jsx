@@ -10,7 +10,7 @@ function Login(){
     return(
         <div className="login">
             <div className="bg"></div>
-            <div className="input_login">
+            <div className="input_login" dir="ltr">
                 <InputUserName/>
                 <InputPassword/>
                 <div className="btns" >

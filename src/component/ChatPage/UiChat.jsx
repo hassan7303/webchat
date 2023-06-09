@@ -1,7 +1,8 @@
 import HeaderChat from "./header/HeaderChat";
 import './uichat.css'
 import SimpleBottomNavigation from "./Sidebar/menuchat";
-import SearchAppBar from "./Sidebar/Sidebar";
+import SearchAppBar from "./Sidebar/SearchAppBar";
+import Main from "./main/Main";
 
 
 
@@ -12,16 +13,18 @@ function UiChat(){
                 <HeaderChat/>
             </header>
             <main>
-
+                <Main/>
             </main>
             <menu>
                 <p>hassan</p>
             </menu>
-            <aside>
+            <sidebar>
                 <SearchAppBar/>
                 <SimpleBottomNavigation/>
-                <p>hassan</p>
-            </aside>
+                <div className="list_userNames_chat">
+                    <p>hassan</p>
+                </div>
+            </sidebar>
         </div>
     )
 }
