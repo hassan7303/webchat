@@ -52,7 +52,7 @@ aside{
     position: fixed;
     display: flex;
     gap: 18px;
-    left: 0;
+    left: 25px;
 }
 .profile_information{
     display: flex;
@@ -83,7 +83,7 @@ aside{
     justify-content: end;
 }
 .css-0 {
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #000000c9;
 }
 .css-0 button{
     color: white;
@@ -103,4 +103,15 @@ aside{
 }
 .list_userNames_chat{
     overflow: auto;
+    background: #212121;
+    color: white;
+    height: 82vh;
+}
+footer{
+    position: absolute;
+    bottom: 20px;
+}
+.main_body{
+    display: flex;
+    justify-content: center;
 }
