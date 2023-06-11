@@ -115,3 +115,48 @@ footer{
     display: flex;
     justify-content: center;
 }
+.users_cadr{
+    background: #1976d2;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+}
+.time_recently{
+    position: absolute;
+    left: 18px;
+}
+p{
+    margin: 0 !important;
+}
+.container_main{
+    width: 40vw;
+    color: white;
+    height: 73vh;
+    overflow: auto;
+    position: relative;
+}
+.message_send{
+    background: #1976d2;
+    width: fit-content;
+    padding: 7px;
+    border-radius: 11px;
+    position: relative;
+    margin-top: 5px;
+}
+.message_receive{
+    background: #212121;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 7px;
+    border-radius: 11px;
+    position: relative;
+    left: 0;
+    margin-top: 5px;
+}
+.container_message_receive{
+    display: flex;
+    justify-content: end;
+}
