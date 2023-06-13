@@ -23,6 +23,9 @@
     display: grid;
     grid-template-columns: 423px 1fr;
     grid-template-rows: 9vh 88.7vh;
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
 }
 main{
     grid-column: 2;
@@ -96,10 +99,11 @@ aside{
     border-bottom: 2px solid !important;
 }
 .bg_main{
-    background-image: url("./main/a6291376290113f9a9cf20d505ae3936.jpg");
+    background-image: url(./main/a6291376290113f9a9cf20d505ae3936.jpg);
     background-size: cover;
-    width: 69vw;
-    height: 91vh;
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
 }
 .list_userNames_chat{
     overflow: auto;
