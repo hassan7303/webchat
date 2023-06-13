@@ -9,17 +9,13 @@ import {
   InputLabel,
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import { useDispatch, useSelector } from "react-redux";
-import { userName, password, messageSend } from "../Store/Store";
 import { AccountCircle } from "@mui/icons-material";
 import TextField from "@mui/material/TextField";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Login() {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const selectorUserName = useSelector((state)=>state.userName)
-  const selectorPassword = useSelector((state)=>state.password)
+
   //   password
   const [showPassword, setShowPassword] = useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -27,10 +23,15 @@ function Login() {
     event.preventDefault();
   };
   const [password, setPassword] = useState();
-  console.log(password);
+
   // user Name
   const [userName, setUserName] = useState();
-  console.log(userName);
+  const sendUserNameAndPassword = () => {
+    navigate("/chatPage");
+    console.log(userName);
+   console.log(password);
+  
+  };
   return (
     <div className="login">
       <div className="bg"></div>
@@ -81,7 +82,7 @@ function Login() {
 
           <button
             className="btn btn-primary btn_login"
-            onClick={() => navigate("/chatPage")}
+            onClick={sendUserNameAndPassword}
           >
             ورود
           </button>

@@ -9,13 +9,12 @@ import {
   InputLabel,
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import { useDispatch, useSelector } from "react-redux";
-import { userName, password, messageSend } from "../Store/Store";
 import { AccountCircle } from "@mui/icons-material";
 import TextField from "@mui/material/TextField";
 import "bootstrap/dist/css/bootstrap.min.css";
 function SignUp() {
   const Navigate = useNavigate();
+
   //   password
   const [showPassword, setShowPassword] = useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -23,11 +22,16 @@ function SignUp() {
     event.preventDefault();
   };
   const [password, setPassword] = useState();
-  console.log(password);
+  const [password2, setPassword2] = useState();
   // user Name
   const [userName, setUserName] = useState();
-  console.log(userName);
 
+  const sendUserNameAndPassword = () => {
+    Navigate("/chatPage");
+    console.log(userName);
+    console.log(password);
+    console.log(password2);
+  };
   return (
     <div className="login">
       <div className="bg"></div>
@@ -75,7 +79,7 @@ function SignUp() {
           </InputLabel>
           <Input
             id="standard-adornment-password"
-            onChange={(event) => setPassword(event.target.value)}
+            onChange={(event) => setPassword2(event.target.value)}
             type={showPassword ? "text" : "password"}
             endAdornment={
               <InputAdornment position="end">
@@ -92,7 +96,7 @@ function SignUp() {
         </FormControl>
         <button
           className="btn btn-primary w-100 btn_signUp"
-          onClick={() => Navigate("/chatPage")}
+          onClick={sendUserNameAndPassword}
         >
           ثبت نام{" "}
         </button>
