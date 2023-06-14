@@ -21,8 +21,8 @@
 }
 .container_chat_ui{
     display: grid;
-    grid-template-columns: 423px 1fr;
-    grid-template-rows: 9vh 88.7vh;
+    grid-template-columns: .5fr 2fr;
+    grid-template-rows: 0vh 1fr;
     width: auto;
     height: 100vh;
     overflow: hidden;
@@ -43,13 +43,15 @@ aside{
     z-index: 1000;
 }
 .icons{
-    width: 27px;
+    width: 26px;
     cursor: pointer;
-    height: 31px;
+    height: 25px;
+    box-sizing: unset;
+    padding: 5px;
 }
 .icons:hover{
-    border-radius: 50%;
-    box-shadow: 0 0 5px 0 white;
+    border-radius: 57%;
+    background: #454545b8;
 }
 .icons_header{
     position: fixed;
@@ -109,7 +111,7 @@ aside{
     overflow: auto;
     background: #212121;
     color: white;
-    height: 82vh;
+    height: 100vh;
 }
 footer{
     position: absolute;
@@ -118,6 +120,8 @@ footer{
 .main_body{
     display: flex;
     justify-content: center;
+    height: 87vh;
+    overflow: auto;
 }
 .users_cadr{
     background: #1976d2;
@@ -127,6 +131,7 @@ footer{
     flex-direction: row;
     gap: 15px;
     position: relative;
+    border: 1px solid black;
 }
 .time_recently{
     position: absolute;
@@ -138,9 +143,10 @@ p{
 .container_main{
     width: 40vw;
     color: white;
-    height: 73vh;
+    height: 77vh;
     overflow: auto;
     position: relative;
+    top: 4rem;
 }
 .message_send{
     background: #1976d2;
@@ -163,4 +169,13 @@ p{
 .container_message_receive{
     display: flex;
     justify-content: end;
+}
+.box_users{
+    background: #212121;
+    height: 100vh;
+    overflow: hidden;
+}
+.css-ancrnh-MuiButtonBase-root-MuiIconButton-root {
+    position: absolute !important;
+    right: 0 !important;
 }
