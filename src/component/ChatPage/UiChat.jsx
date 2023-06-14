@@ -1,48 +1,30 @@
 import HeaderChat from "./header/HeaderChat";
-import './uichat.css'
-import SimpleBottomNavigation from "./Sidebar/menuchat";
+import SimpleBottomNavigation from "./Sidebar/menugrop";
 import SearchAppBar from "./Sidebar/SearchAppBar";
 import Main from "./main/Main";
-import Avatar from '@mui/material/Avatar';
+import "./uichat.css";
+import MenuChate from "./Sidebar/menuchate";
 
 
-function UiChat(){
-    return(
-        <div className="container_chat_ui">
-            <header className="container_header">
-                <HeaderChat/>
-            </header>
-            <main>
-                <Main/>
-            </main>
-            <menu>
-                <p>hassan</p>
-            </menu>
-            <sidebar>
-                <SearchAppBar/>
-                <SimpleBottomNavigation/>
-                <div className="box_users">
-                    <div className="list_userNames_chat">
-                        <div className="users_cadr">
-                            <div className="avatar_in_list_user">
-                                <Avatar alt="Avatar" src="./header/girl-5.jpg" />
-                            </div>
-                            <div>
-                                <p className="name_user_in_list">
-                                    اقای عسکری
-                                </p>
-                                <div className="message_end">
-                                    <p>سلام خوبی</p>
-                                </div>
-                            </div>
-                            <div className="time_recently">
-                                <p>۹:۱۸</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </sidebar>
-        </div>
-    )
+
+function UiChat() {
+  return (
+    <div className="container_chat_ui">
+      <header className="container_header">
+        <HeaderChat />
+      </header>
+      <main>
+        <Main />
+      </main>
+      <menu>
+        <p>hassan</p>
+      </menu>
+      <sidebar>
+        <SearchAppBar />
+        <SimpleBottomNavigation />
+        <MenuChate />
+      </sidebar>
+    </div>
+  );
 }
-export default UiChat
+export default UiChat;
