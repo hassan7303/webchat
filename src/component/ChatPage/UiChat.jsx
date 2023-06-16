@@ -1,5 +1,5 @@
 import HeaderChat from "./header/HeaderChat";
-import SimpleBottomNavigation from "./Sidebar/menugrop";
+import FullWidthTabs from './Sidebar/menugrop'
 import SearchAppBar from "./Sidebar/SearchAppBar";
 import Main from "./main/Main";
 import "./uichat.css";
@@ -21,7 +21,7 @@ function UiChat() {
       </menu>
       <sidebar>
         <SearchAppBar />
-        <SimpleBottomNavigation />
+        <FullWidthTabs />
         <MenuChate />
       </sidebar>
     </div>

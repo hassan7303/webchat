@@ -180,3 +180,9 @@ p{
     position: absolute !important;
     right: 0 !important;
 }
+.css-1ka5eyc-MuiPaper-root-MuiMenu-paper-MuiPopover-paper{
+    top: 58px !important;
+    width: 16rem;
+    height: fit-content;
+    right: 38px;
+}
