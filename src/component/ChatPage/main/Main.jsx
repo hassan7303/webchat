@@ -49,40 +49,39 @@ function Main() {
         <footer>
           <Paper
             component="div"
-            style={{ borderRadius: "36px", width: "42vw" }}
             sx={{
               p: "2px 4px",
               display: "flex",
               alignItems: "center",
               width: 400,
+              borderRadius: "36px",
+              width: "42vw",
             }}
           >
             <input type='file' id='file' ref={inputFile} style={{display: 'none'}}/>
           
             <IconButton
-              sx={{ p: "10px" }}
+              sx={{ p: "10px" ,color:"white",transform: "rotate(45deg)"}}
               aria-label="menu"
-              style={{ transform: "rotate(45deg)" }}
               onClick={onButtonClick}
             >
               <AttachFileIcon />
             </IconButton>
 
             <InputBase
-              sx={{ ml: 1, flex: 1 }}
+              sx={{ ml: 1, flex: 1 ,color:"white"}}
               placeholder="پیام"
               onChange={(event) => setSendMessage(event.target.value)}
             />
 
-            <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
+            <IconButton type="button" sx={{ p: "10px" ,color:"white"}} aria-label="search">
               <InsertEmoticonIcon />
             </IconButton>
             <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
             <IconButton
               color="primary"
-              sx={{ p: "10px" }}
+              sx={{ p: "10px",transform: "rotate(180deg)" }}
               aria-label="directions"
-              style={{ transform: "rotate(180deg)" }}
             >
               <SendIcon onclick={massege} />
             </IconButton>

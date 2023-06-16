@@ -81,7 +81,7 @@ function MenuChate() {
         onChangeIndex={handleChangeIndex}
       > */}
         <TabPanel className="scrol_menu" value={value} index={0} dir={!theme.direction}>
-        <div className="users_cadr">
+        <div className="users_cadr" >
           <div className="avatar_in_list_user">
             <Avatar alt="ا" src="./header/girl-5.jpg" />
           </div>

@@ -100,6 +100,7 @@ export default function SearchAppBar() {
               MenuListProps={{
                 "aria-labelledby": "fade-button",
               }}
+              // style={{ top:" 58px !important",width: "16rem", height: "fit-content",right: "38px",color:" white !important"}}
             >
               <MenuItem onClick={handleClose}>پیام های ذخیره شده</MenuItem>
               <MenuItem onClick={handleClose}>مخاطبین</MenuItem>
@@ -110,7 +111,7 @@ export default function SearchAppBar() {
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block", top:" 58px !important",width: "16rem", height: "fit-content",right: "38px",color:" white !important" } }}
           ></Typography>
           <Search>
             <SearchIconWrapper>
