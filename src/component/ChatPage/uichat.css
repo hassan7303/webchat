@@ -21,7 +21,7 @@
 }
 .container_chat_ui{
     display: grid;
-    grid-template-columns: .5fr 2fr;
+    grid-template-columns: .4fr 2fr;
     grid-template-rows: 0vh 1fr;
     width: auto;
     height: 100vh;
@@ -67,7 +67,6 @@ aside{
 }
 .MuiPaper-root{
     position: relative !important;
-    height: 62px;
     z-index: 1000 !important;
     background-color: #212121 !important;
    
@@ -108,7 +107,7 @@ aside{
     overflow: hidden;
 }
 .list_userNames_chat{
-    overflow: auto;
+   
     background: #212121;
     color: white;
     height: 100vh;
@@ -185,4 +184,13 @@ p{
     width: 16rem;
     height: fit-content;
     right: 38px;
+    color: white !important;
 }
+.css-19kzrtu {
+    padding: 0.1rem !important;
+    background: #212121 !important;
+}
+.scrol_menu{
+    overflow: auto;
+    height: 100vh;
+} 

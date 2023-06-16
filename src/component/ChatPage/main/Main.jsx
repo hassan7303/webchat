@@ -7,9 +7,14 @@ import IconButton from "@mui/material/IconButton";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import SendIcon from "@mui/icons-material/Send";
 import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
-import { useState } from "react";
+import { useState,useRef } from "react";
 
 function Main() {
+  const inputFile = useRef(null) 
+  const onButtonClick = () => {
+    // `current` points to the mounted file input element
+    inputFile.current.click();
+  };
   const [sendMessage, setSendMessage] = useState();
   const massege = () => {
     console.log(sendMessage);
@@ -52,10 +57,13 @@ function Main() {
               width: 400,
             }}
           >
+            <input type='file' id='file' ref={inputFile} style={{display: 'none'}}/>
+          
             <IconButton
               sx={{ p: "10px" }}
               aria-label="menu"
               style={{ transform: "rotate(45deg)" }}
+              onClick={onButtonClick}
             >
               <AttachFileIcon />
             </IconButton>

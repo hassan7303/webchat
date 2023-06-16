@@ -9,7 +9,7 @@ function HeaderChat(){
         <AppBar position="fixed">
         <Toolbar>
             <div className="profile_information">
-                <Avatar alt="Avatar" src="./girl-5.jpg" />
+                <Avatar alt="ا" src="./girl-5.jpg" />
                 <div className="header_name_user">
                     <p className="data_username_profill">اقای عسکری</p>
                     <p className="date_seen">اخرین بازدید به تازگی</p>
