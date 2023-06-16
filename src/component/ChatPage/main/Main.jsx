@@ -7,10 +7,10 @@ import IconButton from "@mui/material/IconButton";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import SendIcon from "@mui/icons-material/Send";
 import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
-import { useState,useRef } from "react";
+import { useState, useRef } from "react";
 
 function Main() {
-  const inputFile = useRef(null) 
+  const inputFile = useRef(null);
   const onButtonClick = () => {
     // `current` points to the mounted file input element
     inputFile.current.click();
@@ -58,10 +58,15 @@ function Main() {
               width: "42vw",
             }}
           >
-            <input type='file' id='file' ref={inputFile} style={{display: 'none'}}/>
-          
+            <input
+              type="file"
+              id="file"
+              ref={inputFile}
+              style={{ display: "none" }}
+            />
+
             <IconButton
-              sx={{ p: "10px" ,color:"white",transform: "rotate(45deg)"}}
+              sx={{ p: "10px", color: "white", transform: "rotate(45deg)" }}
               aria-label="menu"
               onClick={onButtonClick}
             >
@@ -69,18 +74,22 @@ function Main() {
             </IconButton>
 
             <InputBase
-              sx={{ ml: 1, flex: 1 ,color:"white"}}
+              sx={{ ml: 1, flex: 1, color: "white" }}
               placeholder="پیام"
               onChange={(event) => setSendMessage(event.target.value)}
             />
 
-            <IconButton type="button" sx={{ p: "10px" ,color:"white"}} aria-label="search">
+            <IconButton
+              type="button"
+              sx={{ p: "10px", color: "white" }}
+              aria-label="search"
+            >
               <InsertEmoticonIcon />
             </IconButton>
             <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
             <IconButton
               color="primary"
-              sx={{ p: "10px",transform: "rotate(180deg)" }}
+              sx={{ p: "10px", transform: "rotate(180deg)" }}
               aria-label="directions"
             >
               <SendIcon onclick={massege} />

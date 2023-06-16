@@ -90,7 +90,7 @@ export default function SearchAppBar() {
               aria-expanded={open ? "true" : undefined}
               onClick={handleClick}
             >
-              <MenuIcon />
+              <MenuIcon  style={{color:"white"}}/>
             </Button>
             <Menu
               id="fade-menu"
@@ -100,7 +100,6 @@ export default function SearchAppBar() {
               MenuListProps={{
                 "aria-labelledby": "fade-button",
               }}
-              // style={{ top:" 58px !important",width: "16rem", height: "fit-content",right: "38px",color:" white !important"}}
             >
               <MenuItem onClick={handleClose}>پیام های ذخیره شده</MenuItem>
               <MenuItem onClick={handleClose}>مخاطبین</MenuItem>

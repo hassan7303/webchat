@@ -24,7 +24,7 @@
 }
 .container_chat_ui{
     display: grid;
-    grid-template-columns: .4fr 2fr;
+    grid-template-columns: 400px 1fr;
     grid-template-rows: 0vh 1fr;
     width: auto;
     height: 100vh;
@@ -51,6 +51,8 @@ aside{
     height: 25px;
     box-sizing: unset;
     padding: 5px;
+    display: flex;
+    justify-content: center;
 }
 .icons:hover{
     border-radius: 57%;
@@ -126,14 +128,14 @@ footer{
     overflow: auto;
 }
 .users_cadr{
-    background: #1976d2;
+    cursor: pointer;
     padding: 10px;
     border-radius: 12px;
     display: flex;
     flex-direction: row;
     gap: 15px;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid #212121;
 }
 .time_recently{
     position: absolute;
@@ -193,4 +195,7 @@ p{
 } 
 sidebar{
     width: 400px;
+}
+.users_cadr:hover{
+background: #1a1919;
 }
